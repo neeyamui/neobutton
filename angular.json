@@ -91,6 +91,35 @@
           }
         }
       }
+    },
+    "my-component-lib": {
+      "projectType": "library",
+      "root": "projects/my-component-lib",
+      "sourceRoot": "projects/my-component-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/my-component-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/my-component-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/my-component-lib/tsconfig.spec.json"
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "analytics": "11681636-1471-4786-8134-793e535f09a9"
   }
 }

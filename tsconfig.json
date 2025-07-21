@@ -7,6 +7,13 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "baseUrl": "./", // <--- Add this line
+    "paths": {
+       "my-component-lib": [
+        "dist/my-component-lib/my-component-lib", // This points to the main entry file (e.g., index.d.ts)
+        "dist/my-component-lib"                   // This points to the folder itself
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
@@ -29,6 +36,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/my-component-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/my-component-lib/tsconfig.spec.json"
     }
   ]
 }

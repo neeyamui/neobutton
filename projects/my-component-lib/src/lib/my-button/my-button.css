@@ -1,0 +1,14 @@
+/* projects/my-component-library/src/lib/my-button/my-button.css */
+.my-library-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.my-library-button:hover {
+  opacity: 0.9;
+}
