@@ -1,6 +1,6 @@
 {
   "name": "@neeyamoui/my-component-lib",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A reusable Angular component library with common UI elements like buttons.",
   "keywords": ["angular", "components", "ui", "library", "standalone", "button"],
   "author": "neeyamoui",
