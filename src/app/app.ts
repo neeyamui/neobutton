@@ -21,13 +21,5 @@ export class App { // Updated class name to match your provided class
   protected readonly title = signal('my-angular-app');
   buttonClickedMessage: string = '';
 
-  onButtonClick(): void {
-    this.buttonClickedMessage = 'First button clicked!';
-    console.log('First button from library clicked!');
-  }
 
-  onAnotherButtonClick(): void {
-    this.buttonClickedMessage = 'Second button clicked!';
-    console.log('Second button from library clicked!');
-  }
 }

@@ -1,5 +1,9 @@
-<!-- projects/my-component-library/src/lib/my-button/my-button.component.html -->
-<button class="my-library-button" [style.background-color]="backgroundColor" (click)="onClick.emit()">
-  <ng-content></ng-content>
-</button>
-<div>Call me</div>
+<div class="col s12 my-library_emptyFlex">
+  <mat-icon> no_sim</mat-icon>
+  <div class="col s12 my-library_noDataText center">
+    <ng-content select=".main-content"></ng-content>
+  </div>
+  <div class="col s12 my-library_subNoData center">
+    <ng-content select=".sub-content"></ng-content>
+  </div>
+</div>

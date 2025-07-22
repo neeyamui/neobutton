@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 /* projects/my-component-library/src/lib/my-button/my-button.css */
 .my-library-button {
   padding: 10px 20px;
@@ -11,4 +12,24 @@
 
 .my-library-button:hover {
   opacity: 0.9;
+}
+.my-library_noDataText {
+    font-family: rubik !important;
+    color: #4d4d4d;
+    font-size: 16px;
+}
+
+.my-library_subNoData {
+    font-family: roboto;
+    font-size: 13px;
+    color: #a6a6a6;
+}
+
+.my-library_emptyFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
 }
